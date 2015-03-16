@@ -1,0 +1,46 @@
+h1 {
+	padding: 20px;
+	margin: auto;
+	text-align: center;
+	color: white;
+	font-family: 'Satisfy', cursive;
+	font-size: 75px;
+}
+
+
+.container {
+	width:1000px;
+	height:600px;
+	padding: 0px;
+	border:1px solid gray;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	margin: 0 auto;
+	background-image: url("http://cdn.twitrcovers.com/wp-content/uploads/2013/02/Water-Landscapes%EF%BC%8Dl.jpg");
+
+	background-size: 100%;
+
+}
+
+.nav {
+	position:absolute;
+	top: 300px;
+	height: 50px;
+	width: 30px;
+	opacity: 0.6;
+}
+.nav:hover {
+	opacity: 0.9;
+}
+
+#prev {
+	background: #000 url('https://dl.dropboxusercontent.com/u/65639888/image/prev.png') no-repeat center;
+	left: 0px;
+}
+
+#next {
+	background: #000 url('https://dl.dropboxusercontent.com/u/65639888/image/next.png') no-repeat center;
+	right: 0px;
+}
+
