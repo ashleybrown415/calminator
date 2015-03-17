@@ -8,23 +8,19 @@ var pics = [
 var i = 0
 
 $("#prev").click(function() {
-   $(".container").css('background-image', pics[i])
-   // now I need to do something to decrease i for the next time I hit this function
    i--;
    if (i == -1) {
    	i = 4;
    }
-   else {}
+   $(".container").css('background-image', pics[i])
 });
 
 $("#next").click(function() {
-   $(".container").css('background-image', pics[i])
-   // now I need to do something to increase i for the next time I hit this function
    i++;
    if (i == 5) {
    	i = 0;
    }
-   else {}
+   $(".container").css('background-image', pics[i])
 });
 
 
