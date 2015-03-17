@@ -8,10 +8,9 @@ var pics = [
 var i = 0
 
 $("#prev").click(function() {
-   i--;
-   if (i == -1) {
-   	i = 4;
-   }
+   if (i == 0) {
+   	i = pics.length;
+    i--;}
    $(".container").css('background-image', pics[i])
 });
 
@@ -20,7 +19,7 @@ $("#next").click(function() {
    if (i == pics.length) {
    	i = 0;
    }
-   $(".container").css('background-image', pics[i])
+   $('.container').css('background-image', pics[i]);
 });
 
 var timer = false;
