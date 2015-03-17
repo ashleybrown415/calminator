@@ -17,10 +17,24 @@ $("#prev").click(function() {
 
 $("#next").click(function() {
    i++;
-   if (i == 5) {
+   if (i == pics.length) {
    	i = 0;
    }
    $(".container").css('background-image', pics[i])
+});
+
+var timer = false;
+ 
+$('#autocalm').click(function(){
+  if (timer == false){
+	timer = setInterval(function(){
+  	$('#next').click();
+	}, 3000);
+}
+  else{
+    clearInterval(timer);
+    timer = false;
+  }
 });
 
 

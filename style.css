@@ -44,3 +44,7 @@ h1 {
 	right: 0px;
 }
 
+.checkbox {
+	display: inline-block;
+	float: right;
+}
